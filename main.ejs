@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body style="background-image: url('/images/Bmi-chart-1.jpg');  background-size: 50%; /* set the width of the background image to 50% */">
+  <div style=" text-align: center; background-color: rgb(238, 227, 227);margin-left: 35%; margin-right: 35%; ;">
+       
+       <P>NAME : ANUSHA ZUABIR  ROLLNUMBER 20I-2454
+        <br>SECTION : BS-DS-N <br>
+        DATE : 27-4-2023 
+        ASSIGNMENT # 2 </P>
+    <H6>
+  </div>
+  <div style="background-color: coral; ">
+    <h1 style="text-align: center; color: rgb(238, 227, 227);">BMI Calculator</h1>
+
+
+
+    <form action="/bmicalculator" method="post" style="padding-left: 35%; ">
+      <div style="padding: 5%;">
+        <label>Weight:</label>
+        <input type="number" id="weight" placeholder="Enter weight" name="weight" required>
+        <select id="weight-unit"  name="weightUnit">
+          <option value="kg">kg</option>
+          <option value="lbs">lbs</option>
+        </select>
+        <br>
+        <label>Height:</label>
+        <input type="number" id="height" placeholder="Enter height" name="height" required>
+        <select id="height-unit" name="heightUnit" >
+          <option value="m">m</option>
+          <option value="in">in</option>
+        </select>
+        <br>
+        <button class="btn"
+        type="submit">Get-BMI</button>
+
+      </div>
+      
+      
+    </form>
+  </div>
+  <div style="background-color: rgb(7, 241, 46) ;padding: 5%; margin-top: 2%;text-align: center;">
+    <% if (bmi) { %>
+      <div><%= bmi %></div>
+    <% } %>
+  </div>
+  
+
+  
+</body>
+</html>
